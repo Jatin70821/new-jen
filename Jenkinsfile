@@ -29,4 +29,14 @@ pipeline {
             }
         }
     }
+
+    post {
+        success {
+            echo 'Pipeline Successfully Executed 🚀'
+        }
+
+        failure {
+            echo 'Pipeline Failed ❌'
+        }
+    }
 }
